@@ -3,3 +3,116 @@
   padding: 0;
   box-sizing: border-box;
 }
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+html {
+  font-family: "Lato", sans-serif;
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  position: relative;
+  height: 320px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: royalblue;
+}
+.logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(logoHtml5.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.welcome {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10vw;
+  left: 30vw;
+}
+.welcome h2 {
+  margin-top: 5%;
+  color: white;
+  font-size: 3rem;
+  line-height: 200%;
+}
+.score {
+  position: absolute;
+  bottom: 10vw;
+  left: 50px;
+  font-size: 2rem;
+  color: white;
+}
+@media (max-width: 1031px) {
+  header {
+    height: 250px;
+  }
+  .logo {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+  }
+  .welcome {
+    right: 5vw;
+    left: 40vw;
+  }
+  .welcome h2 {
+    font-size: 2rem;
+  }
+  .score {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 733px) {
+  .welcome h2 {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 640px) {
+  header {
+    height: 200px;
+  }
+  .logo {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+  }
+  .welcome h2 {
+    font-size: 1.5rem;
+  }
+  .score {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 360px) {
+  header {
+    height: 160px;
+  }
+  .logo {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+  }
+  .welcome h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .score {
+    font-size: 0.8rem;
+  }
+}
+
+main {
+  margin-top: 20vh;
+}
