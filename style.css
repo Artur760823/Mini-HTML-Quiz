@@ -3,11 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+
 html {
   font-family: "Lato", sans-serif;
 }
@@ -39,19 +35,19 @@ header {
   top: 0;
   bottom: 0;
   right: 10vw;
-  left: 30vw;
+  left: 25vw;
 }
 .welcome h2 {
   margin-top: 5%;
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 200%;
 }
 .score {
   position: absolute;
-  bottom: 10vw;
+  bottom: 50px;
   left: 50px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
 }
 @media (max-width: 1031px) {
@@ -114,5 +110,138 @@ header {
 }
 
 main {
-  margin-top: 20vh;
+  background-color: magenta;
+}
+.quiz {
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 20px 0 20px 0;
+}
+.questionArea {
+  background-color: royalblue;
+  color: black;
+  margin: 20px 0 20px 0;
+}
+.questionText {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 10px 0 10px 0;
+}
+.checkAnswer {
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+.checkAnswer input {
+  margin-right: 10px;
+}
+
+.submit {
+  position: relative;
+  bottom: 0;
+  left: calc(50% - 50px);
+  /* transform: translateX(-50%); */
+  border: 2px solid black;
+  padding: 10px 20px;
+  background-color: #fff;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  animation: shakes 5s linear infinite;
+}
+
+@keyframes shakes {
+  0% {
+    transform: translateX(0);
+  }
+
+  1% {
+    transform: translateX(20px);
+  }
+
+  2% {
+    transform: translateX(-20px);
+  }
+
+  3% {
+    transform: translateX(20px);
+  }
+
+  4% {
+    transform: translateX(-20px);
+  }
+
+  5% {
+    transform: translateX(20px);
+  }
+
+  6% {
+    transform: translateX(-20px);
+  }
+
+  7% {
+    transform: translateX(20px);
+  }
+
+  8% {
+    transform: translateX(-20px);
+  }
+
+  9% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(0);
+  }
+
+  90% {
+    transform: translateX(0);
+  }
+
+  91% {
+    transform: translateX(20px);
+  }
+
+  92% {
+    transform: translateX(-20px);
+  }
+
+  93% {
+    transform: translateX(20px);
+  }
+
+  94% {
+    transform: translateX(-20px);
+  }
+
+  95% {
+    transform: translateX(20px);
+  }
+
+  96% {
+    transform: translateX(-20px);
+  }
+
+  97% {
+    transform: translateX(20px);
+  }
+
+  98% {
+    transform: translateX(-20px);
+  }
+
+  99% {
+    transform: translateX(0);
+  }
+
+  100% {
+  }
+}
+footer {
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 200%;
 }
