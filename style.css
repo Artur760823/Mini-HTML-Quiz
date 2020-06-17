@@ -11,6 +11,9 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+.correctAnswer {
+  color: green;
+}
 header {
   position: relative;
   height: 320px;
@@ -48,64 +51,6 @@ header {
   left: 50px;
   font-size: 1.8rem;
   color: white;
-}
-@media (max-width: 1031px) {
-  header {
-    height: 250px;
-  }
-  .logo {
-    position: absolute;
-    width: 90%;
-    height: 90%;
-  }
-  .welcome {
-    right: 5vw;
-    left: 40vw;
-  }
-  .welcome h2 {
-    font-size: 2rem;
-  }
-  .score {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 733px) {
-  .welcome h2 {
-    font-size: 1.7rem;
-  }
-}
-@media (max-width: 640px) {
-  header {
-    height: 200px;
-  }
-  .logo {
-    position: absolute;
-    width: 80%;
-    height: 80%;
-  }
-  .welcome h2 {
-    font-size: 1.5rem;
-  }
-  .score {
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 360px) {
-  header {
-    height: 160px;
-  }
-  .logo {
-    position: absolute;
-    width: 80%;
-    height: 80%;
-  }
-  .welcome h2 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  .score {
-    font-size: 0.8rem;
-  }
 }
 
 main {
@@ -243,4 +188,78 @@ footer {
   font-size: 1.4rem;
   text-align: center;
   line-height: 200%;
+}
+@media (max-width: 1031px) {
+  header {
+    height: 250px;
+  }
+  .logo {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+  }
+  .welcome {
+    right: 5vw;
+    left: 40vw;
+  }
+  .welcome h2 {
+    font-size: 2rem;
+  }
+  .score {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 733px) {
+  .welcome h2 {
+    font-size: 1.7rem;
+  }
+  .questionText {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 640px) {
+  header {
+    height: 200px;
+  }
+  .logo {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+  }
+  .welcome h2 {
+    font-size: 1.5rem;
+  }
+
+  .score {
+    font-size: 1.2rem;
+  }
+  .questionText {
+    font-size: 1.2rem;
+  }
+  .checkAnswer {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 360px) {
+  header {
+    height: 160px;
+  }
+  .logo {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+  }
+  .welcome h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .score {
+    font-size: 0.8rem;
+  }
+  .questionText {
+    font-size: 0.8rem;
+  }
+  .checkAnswer {
+    font-size: 0.6rem;
+  }
 }
